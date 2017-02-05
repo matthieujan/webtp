@@ -1,50 +1,39 @@
 <!DOCTYPE html">
 <html>
 	<head>
-		<title>Music Viewer</title>
+		<title>WEB Work</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-		<link href="css/viewer.css" type="text/css" rel="stylesheet" />
+		<link href="css/index.css" type="text/css" rel="stylesheet" />
 	</head>
 
 	<body>
 		<div id="header">
 
-			<h1>190M Music Playlist Viewer</h1>
-			<h2>Search Through Your Playlists and Music</h2>
+			<h1>WEB 101 - Matthieu Jan</h1>
+			<h2>List of the different Exercises</h2>
 		</div>
-		
-		
+
 		<div id="listarea">
-			<ul id="musiclist">
-				<li class="mp3item">
-					<a href="songs/Be More.mp3">Be More.mp3</a>
-					(5438375 b)
+			<ul id="tdlist">
+				<li class="tditem">
+					<a href="html/td1_1.html">Td1 - partie 1</a>
 				</li>
-
-				<li class="mp3item">
-					<a href="songs/Drift Away.mp3">Drift Away.mp3</a>
-					(5724612 b)
+				<li class="tditem">
+					<a href="html/td1_2.html">Td1 - partie 2</a>
 				</li>
-
-				<li class="mp3item">
-					<a href="songs/Hello.mp3">Hello.mp3</a>
-
-					(1871110 b)
+                <li class="tditem">
+					<a href="html/td2_1.html">Td2 - partie 1</a>
 				</li>
-
-				<li class="mp3item">
-					<a href="songs/Panda Sneeze.mp3">Panda Sneeze.mp3</a>
-					(58 b)
+				<li class="tditem">
+					<a href="html/td2_2.html">Td2 - partie 2</a>
 				</li>
-
-				<li class="playlistitem">
-					<a href="songs/mypicks.txt">mypicks.txt</a>
+                <li class="tditem">
+					<a href="html/td3_1.html">Td3 - partie 1</a>
 				</li>
-
-				<li class="playlistitem">
-					<a href="songs/playlist.txt">playlist.txt</a>
-				</li>
-			</ul>
+				<li class="tditem">
+					<a href="html/td3_2.html">Td3 - partie 2</a>
+                </li>
+            </ul>
 		</div>
 	</body>
 </html>
