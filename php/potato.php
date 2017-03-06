@@ -2,11 +2,9 @@
 header("Content-type: text/plain");
 // ...
 $parts = "moustache eyes";
-if (isset($POST)){
+if (isset($POST['parameters'])){
     $parts = $POST['parameters'];
-}
-
-if (isset($GET)){
+}else{
     echo $parts;
 }
 ?>
