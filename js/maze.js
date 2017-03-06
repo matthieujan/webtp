@@ -1,7 +1,7 @@
 var boundary1 = document.getElementById("boundary1");
 
 boundary1.onMouseOver = function(){
-    boundary1.style.background-color = "red";
+    alerte("JE MARCHE LOL");
 }
 
 boundary1.onMouseOut = function(){
