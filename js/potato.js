@@ -24,7 +24,7 @@ function ajaxGotState(ajax) {
     var members = ajax.responseText.split(" ");
     var i;
     for( i = 0; i<members.length;i++){
-        document.getElementById(members[i]+"_image").display = "inline";
+        document.getElementById(members[i]+"_image").style.display = "inline";
         document.getElementById(members[i]).checked = true;
     }
 }
