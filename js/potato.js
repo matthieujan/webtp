@@ -21,8 +21,12 @@ document.observe("dom:loaded", function() {
 // sets up the appropriate checkbox / image state
 function ajaxGotState(ajax) {
     $("status").innerHTML = ajax.responseText;
-
-	// ...
+    var members = ajax.responseText.split;
+    var i;
+    for( i = 0; i<members.length;i++){
+        document.getElementById(members[i]+"_image").display = "inline";
+        document.getElementById(members[i]).checked = true;
+    }
 }
 
 // called when any checkbox is checked/unchecked;
