@@ -1,10 +1,12 @@
 <?php
 header("Content-type: text/plain");
-// ...
-$parts = "moustache eyes";
+
+$file_path = "potato.txt"
 if (isset($POST['parameters'])){
-    $parts = $POST['parameters'];
+    // Write the contents back to the file
+    file_put_contents($file_path, $POST['parameters']);
+
 }else{
-    echo $parts;
+    echo file_get_contents($file_path);
 }
 ?>
