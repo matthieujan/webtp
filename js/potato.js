@@ -1,4 +1,4 @@
-var WEB_APP = "php/potato.php";   // URL of web app to contact
+var WEB_APP = "/php/potato.php";   // URL of web app to contact
 
 document.observe("dom:loaded", function() {
     // set up listeners on all checkboxes
@@ -21,7 +21,7 @@ document.observe("dom:loaded", function() {
 // sets up the appropriate checkbox / image state
 function ajaxGotState(ajax) {
     $("status").innerHTML = ajax.responseText;
-	
+
 	// ...
 }
 
@@ -29,12 +29,12 @@ function ajaxGotState(ajax) {
 // toggles that accessory and sends the changes to the server
 function toggleAccessory() {
     // make the accessory appear / disappear ...
-    
-    
-    
+
+
+
     // save the state to the server using Ajax ...
-    
-    
+
+
 }
 
 
@@ -45,7 +45,7 @@ function getAccessoriesArray(accessoriesString) {
     return accessoriesString.strip().split(" ");
 }
 
-// returns a string of all accessories that are currently selected on 
+// returns a string of all accessories that are currently selected on
 // mr. potato head, such as "eyes ears moustache"
 function getAccessoriesString() {
     var accessories = [];
@@ -60,8 +60,8 @@ function getAccessoriesString() {
 
 // standard provided Ajax error-handling function
 function ajaxFailure(ajax, exception) {
-    alert("Error making Ajax request:" + 
-          "\n\nServer status:\n" + ajax.status + " " + ajax.statusText + 
+    alert("Error making Ajax request:" +
+          "\n\nServer status:\n" + ajax.status + " " + ajax.statusText +
           "\n\nServer response text:\n" + ajax.responseText);
     if (exception) {
         throw exception;
