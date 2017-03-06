@@ -1,4 +1,5 @@
 <?php
 header("Content-type: text/plain");
-    echo file_get_contents("/php/potato.txt");
+    $content = file_get_contents('/php/potato.txt');
+    echo $content;
 ?>
