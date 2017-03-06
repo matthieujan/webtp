@@ -1,7 +1,7 @@
 <?php
 header("Content-type: text/plain");
 $potatoPath = "potato.txt";
-if (isset($POST['parameters'])){
+if (isset($POST['parts'])){
     file_put_contents($potatoPath,$POST['parts']);
 }else{
     $parts = file_get_contents($potatoPath);
