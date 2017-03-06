@@ -1,8 +1,10 @@
 <?php
 header("Content-type: text/plain");
-echo "eyes";
-$path = "potato.txt";
-$file = fopen($path,"w") or die ("Unable to open file");
-fwrite($file,"Blabla");
-fclose($file);
->
+$potatoPath = "/php/potato.txt";
+if (isset($POST['parameters'])){
+}else{
+    $potatoFile = fopen($potatoPath,"r") or die ();
+    echo fread($potatoFile,filesize($potatoPath));
+    fclose($potatoFile);
+}
+?>
