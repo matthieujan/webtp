@@ -1,3 +1,5 @@
+windows.alert("YOLO");
+
 var boundary1 = document.getElementById("boundary1");
 
 boundary1.onMouseOver = function(){
