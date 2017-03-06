@@ -33,9 +33,13 @@ function ajaxGotState(ajax) {
 // toggles that accessory and sends the changes to the server
 function toggleAccessory() {
     // make the accessory appear / disappear ...
+        var img = document.getElementById(this.id+"_image");
+        if(this.checked){
+            img.style.display = "inline";
+        }else{
+            img.style.display = "none";
+        }
 
-
-    window.alert(this.alt);
     // save the state to the server using Ajax ...
 
 
