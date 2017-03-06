@@ -1,13 +1,12 @@
 <?php
 header("Content-type: text/plain");
-$file_path = "/php/potato.txt"
+$potatoPath = "/php/potato.txt";
 if (isset($POST['parameters'])){
-    $potatoFile = fopen($potatoPath,"w");
+    $potatoFile = fopen($potatoPath,"w") or die ("Unable to open file");
     fwrite($potatoFile,$POST['parameters']);
     fclose($potatoFile);
 }else{
-    $potatoPath = "/php/potato.txt";
-    $potatoFile = fopen($potatoPath,"r");
+    $potatoFile = fopen($potatoPath,"r") or die ("Unable to open file");
     echo fread($potatoFile,filesize($potatoPath));
     fclose($potatoFile);
 }
