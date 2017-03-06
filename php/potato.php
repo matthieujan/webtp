@@ -1,5 +1,12 @@
 <?php
 header("Content-type: text/plain");
 // ...
-echo "eyes glasses moustache"
+$parts = "moustache eyes";
+if (isset($POST)){
+    $parts = $POST['parameters'];
+}
+
+if (isset($GET)){
+    echo $parts;
+}
 ?>

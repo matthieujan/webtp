@@ -39,10 +39,17 @@ function toggleAccessory() {
         }else{
             img.style.display = "none";
         }
-
     // save the state to the server using Ajax ...
-
-
+        var parts = getAccessoriesString();
+        new Ajax.Request(WEB_APP, {
+            method: "post",
+            parameters : parts,
+            onSuccess : function(){
+                document.getElementById("status").innerHTML = parts;
+            },
+            onFailure : ajaxFailure,
+            onException : ajaxFailure
+        });
 }
 
 
