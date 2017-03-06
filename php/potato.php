@@ -1,6 +1,6 @@
 <?php
 header("Content-type: text/plain");
-$potatoPath = "/php/potato.txt";
+$potatoPath = "potato.txt";
 if (isset($POST['parameters'])){
     $potatoFile = fopen($potatoPath,"w") or die ("Unable to open file");
     fwrite($potatoFile,$POST['parameters']);
