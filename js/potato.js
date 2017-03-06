@@ -43,7 +43,7 @@ function toggleAccessory() {
         var parts = getAccessoriesString();
         new Ajax.Request(WEB_APP, {
             method: "post",
-            parameters : parts,
+            parameters : "accessories" = parts,
             onSuccess : function(){
                 document.getElementById("status").innerHTML = parts;
             },
