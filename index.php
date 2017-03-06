@@ -3,7 +3,7 @@
 	<head>
 		<title>WEB Work</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-		<link href="css/index.css" type="text/css" rel="stylesheet" />
+		<link href="/css/index.css" type="text/css" rel="stylesheet" />
 	</head>
 
 	<body>
