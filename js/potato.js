@@ -22,11 +22,14 @@ document.observe("dom:loaded", function() {
 function ajaxGotState(ajax) {
     $("status").innerHTML = ajax.responseText;
     var members = ajax.responseText.split(" ");
-    var i;
-    for( i = 0; i<members.length;i++){
-        document.getElementById(members[i]+"_image").style.display = "inline";
-        document.getElementById(members[i]).checked = true;
+    if(members.length != 0){
+        var i;
+        for( i = 0; i<members.length;i++){
+            document.getElementById(members[i]+"_image").style.display = "inline";
+            document.getElementById(members[i]).checked = true;
+        }
     }
+
 }
 
 // called when any checkbox is checked/unchecked;
